@@ -186,3 +186,9 @@ let g:ctrlp_custom_ignore = '\v[\/](node_modules|dist|.sass_cache|.tmp)$'
 
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#ParenRainbow = 1
+
+" Various golang stuff
+set rtp+=$GOROOT/misc/vim
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
+
+let g:Powerline_symbols = 'fancy'

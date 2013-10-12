@@ -23,4 +23,8 @@ export PIP_RESPECT_VIRTUALENV=true
 
 eval "$(grunt --completion=bash)"
 
+export GOPATH=$HOME/dev/go-workspace
+export GOROOT=$HOME/go-dist
+export PATH=$PATH:$GOROOT/bin
+
 . ~/dotfiles/bash_aliases
